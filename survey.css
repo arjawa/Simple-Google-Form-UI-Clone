@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans&display=swap");
+
+:root {
+  --blue: #673ab7;
+  --submit: rgba(103,58,183,0.6);
+  --reset: rgba(103,58,183,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Google Sans", Arial, Sans-Serif;
+  background-color: #f0ebf8;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
+label, input {
+  display: block;
+}
+
+#header {
+  margin: 12px auto;
+  max-width: 80vw;
+  height: auto;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-top: 10px solid var(--blue);
+  padding: 5vw;
+}
+
+@media (min-width: 640px) {
+  #header {
+    width: 592px;
+    padding: 24px;
+  }
+}
+
+hr {
+  position: relative;
+  left: -5vw;
+  max-width: 90vw;
+  width: 640px;
+  margin: 12px 0;
+  opacity: 0.3;
+}
+
+@media (min-width: 640px) {
+  hr {
+    left: -24px;
+  }
+}
+
+#description {
+  margin-top: 12px;
+}
+
+#google-desc {
+  margin-bottom: 12px;
+}
+
+.flash {
+  color: #ff0000;
+}
+
+.form-group {
+  margin: 12px auto;
+  max-width: 80vw;
+  height: auto;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 5vw;
+}
+
+@media (min-width: 640px) {
+  .form-group {
+    width: 592px;
+    padding: 24px;
+  }
+}
+
+.label {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+  width: 100%;
+  padding: 4px 0;
+  border: none;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+
+.form-group input:hover,
+.form-group input:focus {
+  outline: none;
+  border-bottom: 3px solid var(--blue);
+}
+
+.form-group input:invalid {
+  outline: none;
+}
+
+#dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 175px;
+  height: 48px;
+  outline: none;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 12px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+input[type=radio],
+input[type=checkbox] {
+  margin: 8px 8px 8px 0;
+}
+
+textarea {
+  width: 100%;
+  height: 16px;
+  padding: 4px 0;
+  border: none;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+
+textarea:hover:focus {
+  outline: none;
+  border-bottom: 3px solid var(--blue);
+}
+
+button {
+  height: 35px;
+  padding: 0 24px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 4px;
+}
+
+#submit {
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+#submit:hover {
+  background-color: var(--submit);
+}
+
+#reset {
+  color: var(--blue);
+}
+
+#reset:hover {
+  background-color: var(--reset);
+}
+
+#button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 90vw;
+  width: 640px;
+  height: auto;
+  margin: 12px auto;
+}
+
+footer {
+  max-width: 90vw;
+  width: 640px;
+  height: auto;
+  margin: 12px auto;
+}
+
+#footer-warn {
+  margin-top: 8px;
+  opacity: 0.6;
+}
+
+#footer-desc {
+  text-align: center;
+  padding: 0 16px;
+  margin: 16px 0;
+  opacity: 0.6;
+}
+
+#google-logo {
+  text-align: center;
+  margin: 24px 0;
+  font-size: 2.2rem;
+  opacity: 0.3;
+  font-weight: 400;
+}
+
+.divide {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
